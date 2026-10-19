@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Should We Eat?</title>
+    
+    <!-- Google Fonts Embed: Playball & Yuji Syuku -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Yuji+Syuku&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Where Should We Eat?</h1>
+        <div class="location-badge">
+            <span class="location-icon">📍</span>
+            <span>New York, NY</span>
+        </div>
+        <p>Pick an occasion below to find your restaurant recommendations!</p>
+    </header>
+
+    <!-- Occasion Selection Cards -->
+    <main class="grid-container">
+        <a href="#dessert" class="card">
+            <span class="icon">🍰</span>
+            <h2>Dessert</h2>
+            <p>For bakeries, ice cream, pastries, and sweet treats</p>
+        </a>
+
+        <a href="#brunch" class="card">
+            <span class="icon">🥞</span>
+            <h2>Brunch Spots</h2>
+            <p>Mimosas, bagels, sandwiches, and weekend vibes</p>
+        </a>
+
+        <a href="#datenight" class="card">
+            <span class="icon">🍷</span>
+            <h2>Date Night</h2>
+            <p>Intimate atmospheres, fine dining, and great wine</p>
+        </a>
+
+        <a href="#family" class="card">
+            <span class="icon">🍝</span>
+            <h2>Family Dinner</h2>
+            <p>Spacious spots with rich menus for the whole group</p>
+        </a>
+    </main>
+
+    <!-- Sofia's Top 4 Favorites Showcase Banner -->
+    <section class="favorites-showcase">
+        <h2>Can't Decide? Try Sofia's Personal Top 4! ⭐</h2>
+        <div class="showcase-grid">
+            <a href="#dessert" class="showcase-card">
+                <img src="images/Funny Face Bakery.jpg" alt="Funny Face Bakery">
+                <div class="showcase-info">
+                    <span class="showcase-badge">🍰 Dessert</span>
+                    <h3>Funny Face Bakery</h3>
+                </div>
+            </a>
+            <a href="#brunch" class="showcase-card">
+                <img src="images/La Mercerie.jpg" alt="La Mercerie">
+                <div class="showcase-info">
+                    <span class="showcase-badge">🥞 Brunch</span>
+                    <h3>La Mercerie</h3>
+                </div>
+            </a>
+            <a href="#datenight" class="showcase-card">
+                <img src="images/Hillstone.jpg" alt="Hillstone">
+                <div class="showcase-info">
+                    <span class="showcase-badge">🍷 Date Night</span>
+                    <h3>Hillstone</h3>
+                </div>
+            </a>
+            <a href="#family" class="showcase-card">
+                <img src="images/Polo Bar.jpg.webp" alt="The Polo Bar">
+                <div class="showcase-info">
+                    <span class="showcase-badge">🍝 Family Dinner</span>
+                    <h3>The Polo Bar</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Recommendation Sections -->
+
+    <!-- 1. DESSERT SECTION -->
+    <section id="dessert" class="restaurant-detail">
+        <h1>Dessert Recommendations</h1>
+
+        <!-- Map Embedding -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d48356.123456789!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLevain%20Bakery%20Milk%20Bar%20Van%20Leeuwen%20Magnolia%20NYC!5e0!3m2!1sen!2sus!4v1700000000000" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="restaurant-list">
+
+            <!-- Funny Face Bakery (Top Pick) -->
+            <div class="restaurant-card featured">
+                <span class="top-pick-tag">⭐ Top Pick</span>
+                <h2>Funny Face Bakery</h2>
+                <img src="images/Funny Face Bakery.jpg" alt="Funny Face Bakery">
+                <p class="rating">⭐⭐⭐⭐⭐ 5.0 (Sofia's Favorite)</p>
+                <p>Pop-culture themed custom sugar cookies and tasty baked goods.</p>
+                <div class="button-container">
+                    <a href="https://funnyfacebakery.com/" target="_blank" class="reserve-button">Explore here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Levain Bakery</h2>
+                <img src="images/Levain Bakery.jpg" alt="Levain Bakery">
+                <p class="rating">⭐⭐⭐⭐★ 4.7★</p>
+                <p>World-famous six-ounce decadent, thick-baked cookies.</p>
+                <div class="button-container">
+                    <a href="https://levainbakery.com/" target="_blank" class="reserve-button">Explore here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Van Leeuwen</h2>
+                <img src="images/Van Leeuwen.jpg" alt="Van Leeuwen">
+                <p class="rating">⭐⭐⭐⭐☆ 4.5★</p>
+                <p>Famous for rich, creamy classic and vegan ice cream flavors.</p>
+                <div class="button-container">
+                    <a href="https://vanleeuwenicecream.com/" target="_blank" class="reserve-button">Explore here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Seven Grams</h2>
+                <img src="images/Seven Grams.jpg" alt="Seven Grams">
+                <p class="rating">⭐⭐⭐⭐☆ 4.5★</p>
+                <p>Artisanal coffee house renowned for massive, ooey-gooey cookies.</p>
+                <div class="button-container">
+                    <a href="https://www.sevengramscaffe.com/" target="_blank" class="reserve-button">Explore here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Milk Bar</h2>
+                <img src="images/Milk Bar.jpg" alt="Milk Bar">
+                <p class="rating">⭐⭐⭐⭐☆ 4.2★</p>
+                <p>Iconic bakery known for Cereal Milk soft serve and Cereal Cakes.</p>
+                <div class="button-container">
+                    <a href="https://milkbarstore.com/" target="_blank" class="reserve-button">Explore here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Anita Gelato</h2>
+                <img src="images/Anita Gelato.jpg" alt="Anita Gelato">
+                <p class="rating">⭐⭐⭐⭐★ 4.7★</p>
+                <p>Boutique gelato parlor featuring over 150 flavors of fresh gelato.</p>
+                <div class="button-container">
+                    <a href="https://www.anita-gelato.com/" target="_blank" class="reserve-button">Explore here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Angelina Bakery</h2>
+                <img src="images/Angelina Bakery.webp" alt="Angelina Bakery">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>Italian pastry shop famous for Bombologni donuts and fresh baked pastries.</p>
+                <div class="button-container">
+                    <a href="https://www.angelinabakery.com/" target="_blank" class="reserve-button">Explore here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Magnolia</h2>
+                <img src="images/Magnolia Bakery.png" alt="Magnolia Bakery">
+                <p class="rating">⭐⭐⭐⭐☆ 4.5★</p>
+                <p>Known for their best-selling banana pudding made with light vanilla pudding, sliced bananas, and soft vanilla wafers.</p>
+                <div class="button-container">
+                    <a href="https://www.magnoliabakery.com/" target="_blank" class="reserve-button">Explore here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Rosetta</h2>
+                <img src="images/Rosetta.avif" alt="Rosetta Bakery">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>Where fresh bread, pastries, sandwiches, and espresso are made with care and enjoyed without rush.</p>
+                <div class="button-container">
+                    <a href="https://rosettabakery.com/" target="_blank" class="reserve-button">Explore here!</a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="back-btn">← Pick Another Occasion</a>
+    </section>
+
+    <!-- 2. BRUNCH SECTION -->
+    <section id="brunch" class="restaurant-detail">
+        <h1>Brunch Recommendations</h1>
+
+        <!-- Map Embedding -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d48356.123456789!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSadelles%20Two%20Hands%20Brunch%20NYC!5e0!3m2!1sen!2sus!4v1700000000000" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="restaurant-list">
+
+            <!-- La Mercerie (Top Pick) -->
+            <div class="restaurant-card featured">
+                <span class="top-pick-tag">⭐ Top Pick</span>
+                <h2>La Mercerie</h2>
+                <img src="images/La Mercerie.jpg" alt="La Mercerie">
+                <p class="rating">⭐⭐⭐⭐⭐ 5.0 (Sofia's Favorite)</p>
+                <p>Elegant French bistro serving elevated classic morning dishes.</p>
+                <div class="button-container">
+                    <a href="https://www.lamerceriecafe.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Two Hands</h2>
+                <img src="images/Two Hands.jpg.webp" alt="Two Hands">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>Australian-style cafe with colorful acai bowls and avocado toast.</p>
+                <div class="button-container">
+                    <a href="https://www.twohandshospitality.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Sadie's</h2>
+                <img src="images/Sadie_s.jpg" alt="Sadie's">
+                <p class="rating">⭐⭐⭐⭐☆ 4.3★</p>
+                <p>Charming neighborhood brunch cafe with comfort breakfast classics.</p>
+                <div class="button-container">
+                    <a href="https://www.sadiesnyc.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Sadelle's</h2>
+                <img src="images/Sadells.webp" alt="Sadelle's">
+                <p class="rating">⭐⭐⭐⭐☆ 4.3★</p>
+                <p>High-end bagel towers, smoked fish, and lively weekend dining.</p>
+                <div class="button-container">
+                    <a href="https://www.sadelles.com/location/new-york/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Pura Vida</h2>
+                <img src="images/Pura Vida.jpeg" alt="Pura Vida">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>All-day healthy breakfast plates, smoothies, and organic coffee.</p>
+                <div class="button-container">
+                    <a href="https://www.puravidamiami.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Pop Up Bagels</h2>
+                <img src="images/Pop Up Bagels.jpeg" alt="Pop Up Bagels">
+                <p class="rating">⭐⭐⭐⭐★ 4.6★</p>
+                <p>Hot, crispy bagels paired with artisan Schmear flavors.</p>
+                <div class="button-container">
+                    <a href="https://www.popupbagels.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>NoMo Kitchen</h2>
+                <img src="images/Nomo Kitchen.webp" alt="NoMo Kitchen">
+                <p class="rating">⭐⭐⭐⭐☆ 4.2★</p>
+                <p>Glass-house greenhouse setting with lemon ricotta pancakes.</p>
+                <div class="button-container">
+                    <a href="https://www.nomosoho.com/nomo-kitchen/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Little Hen</h2>
+                <img src="images/Little Hen.jpg" alt="Little Hen">
+                <p class="rating">⭐⭐⭐⭐☆ 4.3★</p>
+                <p>Dreamy floral boutique cafe offering afternoon tea and brunch staples.</p>
+                <div class="button-container">
+                    <a href="https://littlehen.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Le Pain Quotidien</h2>
+                <img src="images/Le Pan Quotein.jpg" alt="Le Pain Quotidien">
+                <p class="rating">⭐⭐⭐⭐☆ 4.1★</p>
+                <p>Rustic bakery offering organic bread, pastries, and tartines.</p>
+                <div class="button-container">
+                    <a href="https://www.lepainquotidien.com/us/en/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Citizen of Soho</h2>
+                <img src="images/Citizen of Soho.jpeg" alt="Citizen of Soho">
+                <p class="rating">⭐⭐⭐⭐☆ 4.5★</p>
+                <p>Bright Australian cafe with vibrant dishes and special espresso drinks.</p>
+                <div class="button-container">
+                    <a href="https://citizens.cafe/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Central Park Boathouse</h2>
+                <img src="images/Central Park Boathouse.jpg" alt="Central Park Boathouse">
+                <p class="rating">⭐⭐⭐⭐☆ 4.3★</p>
+                <p>Here pairs classic American upscale comfort food with iconic, serene views of the rowing boats on the lake.</p>
+                <div class="button-container">
+                    <a href="https://centralparkboathouse.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Tavern on the Green</h2>
+                <img src="images/Tavern on the Green.jpg" alt="Tavern on the Green">
+                <p class="rating">⭐⭐⭐⭐☆ 4.2★</p>
+                <p>The kitchen serves a hearty, rustic, and refined American menu focused on local and seasonal ingredients.</p>
+                <div class="button-container">
+                    <a href="https://www.tavernonthegreen.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="back-btn">← Pick Another Occasion</a>
+    </section>
+
+    <!-- 3. DATE NIGHT SECTION -->
+    <section id="datenight" class="restaurant-detail">
+        <h1>Date Night Recommendations</h1>
+
+        <!-- Map Embedding -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d48356.123456789!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNobu%20Downtown%20Cipriani%20NYC!5e0!3m2!1sen!2sus!4v1700000000000" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="restaurant-list">
+
+            <!-- Hillstone (Top Pick) -->
+            <div class="restaurant-card featured">
+                <span class="top-pick-tag">⭐ Top Pick</span>
+                <h2>Hillstone</h2>
+                <img src="images/Hillstone.jpg" alt="Hillstone">
+                <p class="rating">⭐⭐⭐⭐⭐ 5.0 (Sofia's Favorite)</p>
+                <p>Impeccably consistent, crowd-pleasing American classics like their famous French dip and spinach artichoke dip.</p>
+                <div class="button-container">
+                    <a href="https://hillstonerestaurant.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>The Palm</h2>
+                <img src="images/The Palm.webp" alt="The Palm">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>Classic American steakhouse known for prime steaks and giant lobsters.</p>
+                <div class="button-container">
+                    <a href="https://www.thepalm.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Papa Sans</h2>
+                <img src="images/Papa Sans.webp" alt="Papa Sans">
+                <p class="rating">⭐⭐⭐⭐☆ 4.3★</p>
+                <p>Intimate Japanese dining spot offering elevated sushi and hot dishes.</p>
+                <div class="button-container">
+                    <a href="https://papasansnyc.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Nobu Downtown</h2>
+                <img src="images/Nobu Downtown.webp" alt="Nobu Downtown">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>World-famous high-end Japanese-Peruvian fusion in a stunning setting.</p>
+                <div class="button-container">
+                    <a href="https://www.noburestaurants.com/downtown/home/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Jeans</h2>
+                <img src="images/Jeans.jpg" alt="Jeans">
+                <p class="rating">⭐⭐⭐⭐☆ 4.2★</p>
+                <p>Chic, candlelit ambiance with fantastic cocktails and warm atmosphere.</p>
+                <div class="button-container">
+                    <a href="https://jeansrestaurant.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Electric Lemon</h2>
+                <img src="images/Electric Lemon.jpg" alt="Electric Lemon">
+                <p class="rating">⭐⭐⭐⭐☆ 4.3★</p>
+                <p>Rooftop dining with dramatic skyline views and clean seasonal cuisine.</p>
+                <div class="button-container">
+                    <a href="https://electriclemonnyc.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Cipriani</h2>
+                <img src="images/Ciprini.avif" alt="Cipriani">
+                <p class="rating">⭐⭐⭐⭐☆ 4.3★</p>
+                <p>Glamorous Venetian dining experience featuring signature Bellinis and carpaccio.</p>
+                <div class="button-container">
+                    <a href="https://www.cipriani.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Bar Primi</h2>
+                <img src="images/Bar Primi.jpg" alt="Bar Primi">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>Casual chic corner pasta shop with fresh handmade Italian pastas.</p>
+                <div class="button-container">
+                    <a href="https://www.barprimi.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Duomo 51</h2>
+                <img src="images/Duomo 51.jpg" alt="Duomo 51">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>Offers solid, traditional Tuscan-Italian fare—such as fresh handmade pastas and grilled octopus—that pairs beautifully with its Midtown terrace views.</p>
+                <div class="button-container">
+                    <a href="https://www.duomo51.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="back-btn">← Pick Another Occasion</a>
+    </section>
+
+    <!-- 4. FAMILY DINNER SECTION -->
+    <section id="family" class="restaurant-detail">
+        <h1>Family Dinner Recommendations</h1>
+
+        <!-- Map Embedding -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d48356.123456789!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTAO%20The%20Polo%20Bar%20Din%20Tai%20Fung%20NYC!5e0!3m2!1sen!2sus!4v1700000000000" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="restaurant-list">
+
+            <!-- The Polo Bar (Top Pick) -->
+            <div class="restaurant-card featured">
+                <span class="top-pick-tag">⭐ Top Pick</span>
+                <h2>The Polo Bar</h2>
+                <img src="images/Polo Bar.jpg.webp" alt="The Polo Bar">
+                <p class="rating">⭐⭐⭐⭐⭐ 5.0 (Sofia's Favorite)</p>
+                <p>Ralph Lauren's iconic restaurant featuring classic burgers, steaks, and warm wood decor.</p>
+                <div class="button-container">
+                    <a href="https://www.ralphlauren.com/global-polo-bar" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>TAO</h2>
+                <img src="images/Tao Mid Town.jpg" alt="TAO">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>Dramatic Pan-Asian dining destination with giant Buddha sculpture and family-style sharing.</p>
+                <div class="button-container">
+                    <a href="https://taogroup.com/venues/tao-uptown-new-york/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>SUGARFISH</h2>
+                <img src="images/Sugar Fish.webp" alt="SUGARFISH">
+                <p class="rating">⭐⭐⭐⭐★ 4.6★</p>
+                <p>Famous "Trust Me" traditional omakase-style sushi sets loved by everyone.</p>
+                <div class="button-container">
+                    <a href="https://sugarfishsushi.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Monkey Bar</h2>
+                <img src="images/Monkey Bar.png.webp" alt="Monkey Bar">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>Historic NYC venue known for American chops, classic pasta, and plush seating.</p>
+                <div class="button-container">
+                    <a href="https://www.monkeybarnyc.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Little Ruby</h2>
+                <img src="images/Little Ruby.jpg" alt="Little Ruby">
+                <p class="rating">⭐⭐⭐⭐☆ 4.5★</p>
+                <p>Relaxed Australian dining known for Bronte burgers, fresh salads, and pasta.</p>
+                <div class="button-container">
+                    <a href="https://www.rubyscafe.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Din Tai Fung</h2>
+                <img src="images/Din Tai Fung.jpg" alt="Din Tai Fung">
+                <p class="rating">⭐⭐⭐⭐★ 4.6★</p>
+                <p>World-renowned Taiwanese dim sum famous for delicate xiao long bao soup dumplings.</p>
+                <div class="button-container">
+                    <a href="https://dintaifungusa.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Crazy Pizza</h2>
+                <img src="images/Crazy Pizza.jpeg" alt="Crazy Pizza">
+                <p class="rating">⭐⭐⭐⭐☆ 4.2★</p>
+                <p>Fun, energetic Italian pizzeria featuring thin crust pizza shows and loud entertainment.</p>
+                <div class="button-container">
+                    <a href="https://crazypizza.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>Cafe Fiorello</h2>
+                <img src="images/Cafe Fiorello.jpg" alt="Cafe Fiorello">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>Famous for its sprawling hot and cold vegetable and seafood antipasto bar, thin-crust pizzas, house-made pastas, and traditional Italian entrees like Chicken Parmigiana.</p>
+                <div class="button-container">
+                    <a href="https://www.cafefiorello.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h2>La Pecora Bianca</h2>
+                <img src="images/La Pecora Bianca.jpg" alt="La Pecora Bianca">
+                <p class="rating">⭐⭐⭐⭐☆ 4.4★</p>
+                <p>Pastas are crafted fresh daily in-house, featuring signature dishes like rigatoni vodka, gramigna, and tagliatelle bolognese.</p>
+                <div class="button-container">
+                    <a href="https://www.lapecorabianca.com/" target="_blank" class="reserve-button">Reserve here!</a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="back-btn">← Pick Another Occasion</a>
+    </section>
+
+</body>
+</html>
